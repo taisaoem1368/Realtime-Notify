@@ -17,7 +17,8 @@ import {
   registerTokenWithServer,
 } from "@/services/pushNotifications";
 import { saveNotificationToFirebase } from "@/services/firebase";
-import { playSoundFromUrl } from "@/services/audioPlayer";
+import { playSoundFromUrl, playMoneySequence } from "@/services/audioPlayer";
+import { moneyToFileSequence } from "@/services/moneyReader";
 import type { Subscription } from "expo-notifications";
 
 SplashScreen.preventAutoHideAsync();
@@ -55,10 +56,13 @@ export default function RootLayout() {
           title?: string;
           body?: string;
           soundUrl?: string;
+          amount?: number;
           createdAt?: number;
         };
 
-        if (data.soundUrl) {
+        if (data.amount != null) {
+          playMoneySequence(moneyToFileSequence(data.amount));
+        } else if (data.soundUrl) {
           playSoundFromUrl(data.soundUrl);
         }
 
@@ -66,6 +70,7 @@ export default function RootLayout() {
           title: notification.request.content.title ?? data.title ?? "",
           body: notification.request.content.body ?? data.body ?? "",
           soundUrl: data.soundUrl,
+          amount: data.amount,
           createdAt: data.createdAt ?? Date.now(),
           read: false,
         }).catch(console.warn);
@@ -78,6 +83,7 @@ export default function RootLayout() {
           title?: string;
           body?: string;
           soundUrl?: string;
+          amount?: number;
           createdAt?: number;
         };
         if (data.title || data.body) {
@@ -85,6 +91,7 @@ export default function RootLayout() {
             title: data.title ?? "",
             body: data.body ?? "",
             soundUrl: data.soundUrl,
+            amount: data.amount,
             createdAt: data.createdAt ?? Date.now(),
             read: false,
           }).catch(console.warn);

@@ -81,6 +81,11 @@ export function NotificationCard({ notification }: Props) {
         >
           {notification.body}
         </Text>
+        {notification.amount != null && (
+          <Text style={[styles.amount, { color: colors.primary }]}>
+            {notification.amount.toLocaleString("vi-VN")}đ
+          </Text>
+        )}
       </View>
     </View>
   );
@@ -142,5 +147,10 @@ const styles = StyleSheet.create({
   body: {
     fontSize: 13,
     lineHeight: 19,
+  },
+  amount: {
+    fontSize: 16,
+    fontWeight: "700",
+    marginTop: 2,
   },
 });

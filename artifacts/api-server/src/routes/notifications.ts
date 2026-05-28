@@ -37,6 +37,7 @@ export interface NotificationRecord {
   title: string;
   body: string;
   soundUrl?: string;
+  amount?: number;
   createdAt: number;
 }
 
@@ -74,10 +75,11 @@ router.post("/register-token", (req, res) => {
 });
 
 router.post("/notify", async (req, res) => {
-  const { title, body, soundUrl } = req.body as {
+  const { title, body, soundUrl, amount } = req.body as {
     title?: string;
     body?: string;
     soundUrl?: string;
+    amount?: number;
   };
 
   if (!title || !body) {
@@ -90,6 +92,7 @@ router.post("/notify", async (req, res) => {
     title,
     body,
     soundUrl,
+    amount,
     createdAt: Date.now(),
   };
 
@@ -108,7 +111,7 @@ router.post("/notify", async (req, res) => {
       title,
       body,
       sound: "default",
-      data: { id: record.id, title, body, soundUrl, createdAt: record.createdAt },
+      data: { id: record.id, title, body, soundUrl, amount, createdAt: record.createdAt },
     }));
 
   try {
