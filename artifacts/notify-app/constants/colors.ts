@@ -1,0 +1,36 @@
+export const Colors = {
+  light: {
+    background: "#F8FAFC",
+    surface: "#FFFFFF",
+    surfaceElevated: "#F1F5F9",
+    primary: "#3B82F6",
+    primaryDark: "#2563EB",
+    text: "#0F172A",
+    textSecondary: "#64748B",
+    textTertiary: "#94A3B8",
+    border: "#E2E8F0",
+    unread: "#EFF6FF",
+    unreadBorder: "#BFDBFE",
+    success: "#10B981",
+    danger: "#EF4444",
+    badge: "#EF4444",
+  },
+  dark: {
+    background: "#0F172A",
+    surface: "#1E293B",
+    surfaceElevated: "#293548",
+    primary: "#3B82F6",
+    primaryDark: "#60A5FA",
+    text: "#F8FAFC",
+    textSecondary: "#94A3B8",
+    textTertiary: "#64748B",
+    border: "#334155",
+    unread: "#1E3A5F",
+    unreadBorder: "#2563EB",
+    success: "#10B981",
+    danger: "#EF4444",
+    badge: "#EF4444",
+  },
+};
+
+export type ColorScheme = keyof typeof Colors;
