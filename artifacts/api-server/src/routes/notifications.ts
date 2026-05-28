@@ -36,7 +36,7 @@ export interface NotificationRecord {
   id: string;
   title: string;
   body: string;
-  sound?: string;
+  soundUrl?: string;
   createdAt: number;
 }
 
@@ -74,10 +74,10 @@ router.post("/register-token", (req, res) => {
 });
 
 router.post("/notify", async (req, res) => {
-  const { title, body, sound } = req.body as {
+  const { title, body, soundUrl } = req.body as {
     title?: string;
     body?: string;
-    sound?: string;
+    soundUrl?: string;
   };
 
   if (!title || !body) {
@@ -89,7 +89,7 @@ router.post("/notify", async (req, res) => {
     id: Date.now().toString() + Math.random().toString(36).slice(2, 9),
     title,
     body,
-    sound,
+    soundUrl,
     createdAt: Date.now(),
   };
 
@@ -107,8 +107,8 @@ router.post("/notify", async (req, res) => {
       to: token,
       title,
       body,
-      sound: sound ? (sound as "default") : "default",
-      data: { id: record.id, title, body, sound, createdAt: record.createdAt },
+      sound: "default",
+      data: { id: record.id, title, body, soundUrl, createdAt: record.createdAt },
     }));
 
   try {

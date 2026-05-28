@@ -17,6 +17,7 @@ import {
   registerTokenWithServer,
 } from "@/services/pushNotifications";
 import { saveNotificationToFirebase } from "@/services/firebase";
+import { playSoundFromUrl } from "@/services/audioPlayer";
 import type { Subscription } from "expo-notifications";
 
 SplashScreen.preventAutoHideAsync();
@@ -53,13 +54,18 @@ export default function RootLayout() {
           id?: string;
           title?: string;
           body?: string;
-          sound?: string;
+          soundUrl?: string;
           createdAt?: number;
         };
+
+        if (data.soundUrl) {
+          playSoundFromUrl(data.soundUrl);
+        }
+
         saveNotificationToFirebase({
           title: notification.request.content.title ?? data.title ?? "",
           body: notification.request.content.body ?? data.body ?? "",
-          sound: data.sound,
+          soundUrl: data.soundUrl,
           createdAt: data.createdAt ?? Date.now(),
           read: false,
         }).catch(console.warn);
@@ -71,14 +77,14 @@ export default function RootLayout() {
           id?: string;
           title?: string;
           body?: string;
-          sound?: string;
+          soundUrl?: string;
           createdAt?: number;
         };
         if (data.title || data.body) {
           saveNotificationToFirebase({
             title: data.title ?? "",
             body: data.body ?? "",
-            sound: data.sound,
+            soundUrl: data.soundUrl,
             createdAt: data.createdAt ?? Date.now(),
             read: false,
           }).catch(console.warn);

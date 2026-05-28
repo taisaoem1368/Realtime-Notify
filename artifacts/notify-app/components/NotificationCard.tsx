@@ -62,7 +62,7 @@ export function NotificationCard({ notification }: Props) {
             {notification.title}
           </Text>
           <View style={styles.metaRow}>
-            {notification.sound && (
+            {notification.soundUrl && (
               <Ionicons
                 name="volume-high"
                 size={11}

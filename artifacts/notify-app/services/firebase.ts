@@ -31,7 +31,7 @@ export interface NotificationRecord {
   id: string;
   title: string;
   body: string;
-  sound?: string;
+  soundUrl?: string;
   createdAt: number;
   read: boolean;
 }
