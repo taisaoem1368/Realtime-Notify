@@ -17,7 +17,7 @@ import {
   registerTokenWithServer,
 } from "@/services/pushNotifications";
 import { saveNotificationToFirebase } from "@/services/firebase";
-import { playSoundFromUrl, playMoneySequence } from "@/services/audioPlayer";
+import { playSoundFromUrl, playMoneySequence, playWarningSound } from "@/services/audioPlayer";
 import { moneyToFileSequence } from "@/services/moneyReader";
 import type { Subscription } from "expo-notifications";
 
@@ -60,7 +60,9 @@ export default function RootLayout() {
           createdAt?: number;
         };
 
-        if (data.amount != null) {
+        if (data.amount === 0) {
+          playWarningSound();
+        } else if (data.amount != null) {
           playMoneySequence(moneyToFileSequence(data.amount));
         } else if (data.soundUrl) {
           playSoundFromUrl(data.soundUrl);

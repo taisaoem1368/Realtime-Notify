@@ -73,6 +73,26 @@ export async function playMoneySequence(keys: AudioKey[]): Promise<void> {
   }
 }
 
+export async function playWarningSound(): Promise<void> {
+  try {
+    await Audio.setAudioModeAsync({
+      playsInSilentModeIOS: true,
+      shouldDuckAndroid: true,
+    });
+    const { sound } = await Audio.Sound.createAsync(
+      require("../assets/sounds/war.wav"),
+      { shouldPlay: true, volume: 1.0 }
+    );
+    sound.setOnPlaybackStatusUpdate((status) => {
+      if (status.isLoaded && status.didJustFinish) {
+        sound.unloadAsync().catch(() => {});
+      }
+    });
+  } catch (err) {
+    console.warn("Failed to play warning sound:", err);
+  }
+}
+
 export async function playSoundFromUrl(url: string): Promise<void> {
   try {
     await Audio.setAudioModeAsync({
