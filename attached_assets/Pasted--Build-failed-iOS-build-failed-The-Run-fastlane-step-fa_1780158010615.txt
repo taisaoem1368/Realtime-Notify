@@ -1,0 +1,28 @@
+✖ Build failed
+
+🍏 iOS build failed:
+The "Run fastlane" step failed because of an error in the Xcode build process. We automatically detected following errors in your Xcode build logs:
+- call to main actor-isolated initializer 'init()' in a synchronous nonisolated context
+- capture of 'filter' with non-sendable type 'PersistentFileLogFilter' (aka '(String) -> Bool') in an isolated closure
+- unknown attribute 'MainActor'
+- main actor-isolated instance method 'updateProps' cannot be used to satisfy nonisolated requirement from protocol 'AnyExpoSwiftUIHostingView'
+- main actor-isolated instance method 'getContentView()' cannot be used to satisfy nonisolated requirement from protocol 'AnyExpoSwiftUIHostingView'
+- main actor-isolated instance method 'getProps()' cannot be used to satisfy nonisolated requirement from protocol 'AnyExpoSwiftUIHostingView'
+- main actor-isolated property 'frame' can not be referenced from a Sendable closure
+- unknown attribute 'MainActor'
+- main actor-isolated instance method 'getWrappedView()' cannot be used to satisfy nonisolated requirement from protocol 'ViewWrapper'
+- main actor-isolated property 'appContext' can not be referenced from a nonisolated context
+- main actor-isolated property 'props' can not be referenced from a nonisolated context
+- main actor-isolated property 'props' can not be referenced from a nonisolated context
+- main actor-isolated property 'props' can not be referenced from a nonisolated context
+- main actor-isolated property 'props' can not be referenced from a nonisolated context
+- call to main actor-isolated instance method 'removeFromSuperview()' in a synchronous nonisolated context
+- main actor-isolated property 'id' can not be referenced from a nonisolated context
+- main actor-isolated property 'props' can not be referenced from a nonisolated context
+- main actor-isolated property 'props' can not be referenced from a nonisolated context
+- main actor-isolated property 'id' can not be referenced from a nonisolated context
+- main actor-isolated property 'props' can not be referenced from a nonisolated context
+- stored property 'completionHandler' of 'Sendable'-conforming class 'URLAuthenticationChallengeForwardSender' has non-sendable type '(URLSession.AuthChallengeDisposition, URLCredential?) -> Void'
+- stored property 'delegateMap' of 'Sendable'-conforming class 'URLSessionSessionDelegateProxy' is mutable
+- unknown attribute 'MainActor'
+Refer to "Xcode Logs" below for additional, more detailed logs.
