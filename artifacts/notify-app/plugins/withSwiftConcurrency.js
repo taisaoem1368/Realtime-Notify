@@ -1,9 +1,8 @@
-const { withDangerousMod, withXcodeProject } = require("@expo/config-plugins");
+const { withDangerousMod } = require("@expo/config-plugins");
 const path = require("path");
 const fs = require("fs");
 
-// Fix 1: Modify Podfile post_install to patch all pod targets
-function withPodfileSwiftFix(config) {
+module.exports = function withSwiftConcurrency(config) {
   return withDangerousMod(config, [
     "ios",
     async (config) => {
@@ -23,8 +22,10 @@ function withPodfileSwiftFix(config) {
     target.build_configurations.each do |cfg|
       cfg.build_settings['SWIFT_VERSION'] = '5.9'
       cfg.build_settings['SWIFT_STRICT_CONCURRENCY'] = 'minimal'
-      existing_cflags = cfg.build_settings['OTHER_CFLAGS'] || '$(inherited)'
-      cfg.build_settings['OTHER_CFLAGS'] = "#{existing_cflags} -Wno-unknown-attributes"
+      existing = cfg.build_settings['OTHER_CFLAGS'] || '$(inherited)'
+      unless existing.include?('-Wno-unknown-attributes')
+        cfg.build_settings['OTHER_CFLAGS'] = "#{existing} -Wno-unknown-attributes"
+      end
     end
   end
 `;
@@ -42,33 +43,4 @@ function withPodfileSwiftFix(config) {
       return config;
     },
   ]);
-}
-
-// Fix 2: Patch main app Xcode project build settings
-function withXcodeSwiftFix(config) {
-  return withXcodeProject(config, (config) => {
-    const project = config.modResults;
-    const configurations = project.pbxXCBuildConfigurationSection();
-
-    Object.keys(configurations).forEach((key) => {
-      const cfg = configurations[key];
-      if (cfg && cfg.buildSettings) {
-        const s = cfg.buildSettings;
-        s.SWIFT_VERSION = "5.9";
-        s.SWIFT_STRICT_CONCURRENCY = "minimal";
-        const existing = s.OTHER_CFLAGS || "$(inherited)";
-        if (!String(existing).includes("-Wno-unknown-attributes")) {
-          s.OTHER_CFLAGS = `${existing} -Wno-unknown-attributes`;
-        }
-      }
-    });
-
-    return config;
-  });
-}
-
-module.exports = function withSwiftConcurrency(config) {
-  config = withPodfileSwiftFix(config);
-  config = withXcodeSwiftFix(config);
-  return config;
 };

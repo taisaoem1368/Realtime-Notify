@@ -1,0 +1,244 @@
+Using Expo modules
+[Expo] Enabling modular headers for pod ExpoModulesCore
+[Expo] Enabling modular headers for pod React-RCTAppDelegate
+[Expo] Enabling modular headers for pod React-RCTFabric
+[Expo] Enabling modular headers for pod ReactAppDependencyProvider
+[Expo] Enabling modular headers for pod React-Core
+[Expo] Enabling modular headers for pod RCT-Folly
+[Expo] Enabling modular headers for pod glog
+[Expo] Enabling modular headers for pod ReactCodegen
+[Expo] Enabling modular headers for pod RCTRequired
+[Expo] Enabling modular headers for pod RCTTypeSafety
+[Expo] Enabling modular headers for pod ReactCommon
+[Expo] Enabling modular headers for pod React-NativeModulesApple
+[Expo] Enabling modular headers for pod Yoga
+[Expo] Enabling modular headers for pod React-Fabric
+[Expo] Enabling modular headers for pod React-graphics
+[Expo] Enabling modular headers for pod React-utils
+[Expo] Enabling modular headers for pod React-featureflags
+[Expo] Enabling modular headers for pod React-debug
+[Expo] Enabling modular headers for pod React-ImageManager
+[Expo] Enabling modular headers for pod React-rendererdebug
+[Expo] Enabling modular headers for pod DoubleConversion
+[Expo] Enabling modular headers for pod React-jsi
+[Expo] Enabling modular headers for pod React-renderercss
+[Expo] Enabling modular headers for pod hermes-engine
+[Expo] Enabling modular headers for pod React-hermes
+[Expo] Enabling modular headers for pod SDWebImage
+[Expo] Enabling modular headers for pod SDWebImageAVIFCoder
+[Expo] Enabling modular headers for pod SDWebImageSVGCoder
+[Expo] Enabling modular headers for pod SDWebImageWebPCoder
+[Expo] Enabling modular headers for pod libavif
+[Expo] Enabling modular headers for pod RNScreens
+Found 6 modules for target `ThngBo`
+link_native_modules! {:ios_packages=>[{:configurations=>[], :name=>"@react-native-async-storage/async-storage", :root=>"/Users/expo/workingdir/build/node_modules/.pnpm/@react-native-async-storage+async-storage@1.24.0_react-native@0.79.2_@babel+core@7.29.7_@type_ezd5gbxyan2dn4sqr3qgkhsqve/node_modules/@react-native-async-storage/async-storage", :path=>"../node_modules/.pnpm/@react-native-async-storage+async-storage@1.24.0_react-native@0.79.2_@babel+core@7.29.7_@type_ezd5gbxyan2dn4sqr3qgkhsqve/node_modules/@react-native-async-storage/async-storage", :podspec_path=>"/Users/expo/workingdir/build/node_modules/.pnpm/@react-native-async-storage+async-storage@1.24.0_react-native@0.79.2_@babel+core@7.29.7_@type_ezd5gbxyan2dn4sqr3qgkhsqve/node_modules/@react-native-async-storage/async-storage/RNCAsyncStorage.podspec", :script_phases=>[]}, {:configurations=>[], :name=>"expo", :root=>"/Users/expo/workingdir/build/node_modules/.pnpm/expo@55.0.26_@babel+core@7.29.7_@expo+dom-webview@55.0.6_@expo+metro-runtime@55.0.11_expo-rou_bp4ommwq6enptkxwsxijlrnohm/node_modules/expo", :path=>"../node_modules/.pnpm/expo@55.0.26_@babel+core@7.29.7_@expo+dom-webview@55.0.6_@expo+metro-runtime@55.0.11_expo-rou_bp4ommwq6enptkxwsxijlrnohm/node_modules/expo", :podspec_path=>"/Users/expo/workingdir/build/node_modules/.pnpm/expo@55.0.26_@babel+core@7.29.7_@expo+dom-webview@55.0.6_@expo+metro-runtime@55.0.11_expo-rou_bp4ommwq6enptkxwsxijlrnohm/node_modules/expo/Expo.podspec", :script_phases=>[]}, {:configurations=>[], :name=>"react-native-gesture-handler", :root=>"/Users/expo/workingdir/build/node_modules/.pnpm/react-native-gesture-handler@2.24.0_react-native@0.79.2_@babel+core@7.29.7_@types+react@19.2._cann5opldon7fzz35wh2jscl4m/node_modules/react-native-gesture-handler", :path=>"../node_modules/.pnpm/react-native-gesture-handler@2.24.0_react-native@0.79.2_@babel+core@7.29.7_@types+react@19.2._cann5opldon7fzz35wh2jscl4m/node_modules/react-native-gesture-handler", :podspec_path=>"/Users/expo/workingdir/build/node_modules/.pnpm/react-native-gesture-handler@2.24.0_react-native@0.79.2_@babel+core@7.29.7_@types+react@19.2._cann5opldon7fzz35wh2jscl4m/node_modules/react-native-gesture-handler/RNGestureHandler.podspec", :script_phases=>[]}, {:configurations=>[], :name=>"react-native-reanimated", :root=>"/Users/expo/workingdir/build/node_modules/.pnpm/react-native-reanimated@3.17.5_@babel+core@7.29.7_react-native@0.79.2_@babel+core@7.29.7_@typ_plfgrooaiax24bioawwwea4wne/node_modules/react-native-reanimated", :path=>"../node_modules/.pnpm/react-native-reanimated@3.17.5_@babel+core@7.29.7_react-native@0.79.2_@babel+core@7.29.7_@typ_plfgrooaiax24bioawwwea4wne/node_modules/react-native-reanimated", :podspec_path=>"/Users/expo/workingdir/build/node_modules/.pnpm/react-native-reanimated@3.17.5_@babel+core@7.29.7_react-native@0.79.2_@babel+core@7.29.7_@typ_plfgrooaiax24bioawwwea4wne/node_modules/react-native-reanimated/RNReanimated.podspec", :script_phases=>[]}, {:configurations=>[], :name=>"react-native-safe-area-context", :root=>"/Users/expo/workingdir/build/node_modules/.pnpm/react-native-safe-area-context@5.4.0_react-native@0.79.2_@babel+core@7.29.7_@types+react@19.2_2ttxihxl3tlrlws6p6a3qndquu/node_modules/react-native-safe-area-context", :path=>"../node_modules/.pnpm/react-native-safe-area-context@5.4.0_react-native@0.79.2_@babel+core@7.29.7_@types+react@19.2_2ttxihxl3tlrlws6p6a3qndquu/node_modules/react-native-safe-area-context", :podspec_path=>"/Users/expo/workingdir/build/node_modules/.pnpm/react-native-safe-area-context@5.4.0_react-native@0.79.2_@babel+core@7.29.7_@types+react@19.2_2ttxihxl3tlrlws6p6a3qndquu/node_modules/react-native-safe-area-context/react-native-safe-area-context.podspec", :script_phases=>[]}, {:configurations=>[], :name=>"react-native-screens", :root=>"/Users/expo/workingdir/build/node_modules/.pnpm/react-native-screens@4.10.0_react-native@0.79.2_@babel+core@7.29.7_@types+react@19.2.15_react@19.1.0__react@19.1.0/node_modules/react-native-screens", :path=>"../node_modules/.pnpm/react-native-screens@4.10.0_react-native@0.79.2_@babel+core@7.29.7_@types+react@19.2.15_react@19.1.0__react@19.1.0/node_modules/react-native-screens", :podspec_path=>"/Users/expo/workingdir/build/node_modules/.pnpm/react-native-screens@4.10.0_react-native@0.79.2_@babel+core@7.29.7_@types+react@19.2.15_react@19.1.0__react@19.1.0/node_modules/react-native-screens/RNScreens.podspec", :script_phases=>[]}], :ios_project_root_path=>"/Users/expo/workingdir/build/ios", :react_native_path=>"../node_modules/.pnpm/react-native@0.79.2_@babel+core@7.29.7_@types+react@19.2.15_react@19.1.0/node_modules/react-native"}
+Auto-linking React Native modules for target `ThngBo`: RNCAsyncStorage, RNGestureHandler, RNReanimated, RNScreens, and react-native-safe-area-context
+Framework build type is static library
+Configuring the target with the New Architecture
+[Codegen] Analyzing /Users/expo/workingdir/build/package.json
+[Codegen] Searching for codegen-enabled libraries in the app.
+[Codegen] The "codegenConfig" field is not defined in package.json. Assuming there is nothing to generate at the app level.
+[Codegen] Searching for codegen-enabled libraries in the project dependencies.
+[Codegen] Found @react-native-async-storage/async-storage
+[Codegen] Found react-native
+[Codegen] Found react-native-gesture-handler
+[Codegen] Found react-native-reanimated
+[Codegen] Found react-native-safe-area-context
+[Codegen] Found react-native-screens
+[Codegen] Searching for codegen-enabled libraries in react-native.config.js
+[Codegen] Processing rnasyncstorage
+[Codegen] Searching for podspec in the project dependencies.
+[Codegen] Supported Apple platforms: ios, macos, tvos, visionos for rnasyncstorage
+[Codegen] Processing FBReactNativeSpec
+[Codegen] Searching for podspec in the project dependencies.
+[Codegen] Processing rncore
+[Codegen] Searching for podspec in the project dependencies.
+[Codegen] Processing rngesturehandler_codegen
+[Codegen] Searching for podspec in the project dependencies.
+[Codegen] Supported Apple platforms: ios, macos, tvos, visionos for rngesturehandler_codegen
+[Codegen] Processing rnreanimated
+[Codegen] Searching for podspec in the project dependencies.
+[Codegen] Supported Apple platforms: ios, macos, tvos, visionos for rnreanimated
+[Codegen] Processing safeareacontext
+[Codegen] Searching for podspec in the project dependencies.
+[Codegen] Supported Apple platforms: ios, macos, tvos, visionos for safeareacontext
+[Codegen] Processing rnscreens
+[Codegen] Searching for podspec in the project dependencies.
+[Codegen] Supported Apple platforms: ios, tvos, visionos for rnscreens
+[Codegen] Generating Native Code for rnasyncstorage - ios
+[Codegen] Generated artifacts: /Users/expo/workingdir/build/ios/build/generated/ios
+[Codegen] [Codegen - FBReactNativeSpec] Skipping iOS code generation for FBReactNativeSpec as it has been generated already.
+[Codegen] [Codegen - rncore] Skipping iOS code generation for rncore as it has been generated already.
+[Codegen] Generating Native Code for rngesturehandler_codegen - ios
+[Codegen] Generated artifacts: /Users/expo/workingdir/build/ios/build/generated/ios
+[Codegen] Generating Native Code for rnreanimated - ios
+[Codegen] Generated artifacts: /Users/expo/workingdir/build/ios/build/generated/ios
+[Codegen] Generating Native Code for safeareacontext - ios
+[Codegen] Generated artifacts: /Users/expo/workingdir/build/ios/build/generated/ios
+[Codegen] Generating Native Code for rnscreens - ios
+[Codegen] Generated artifacts: /Users/expo/workingdir/build/ios/build/generated/ios
+[Codegen] Generating RCTThirdPartyComponentsProvider.h
+[Codegen] Generated artifact: /Users/expo/workingdir/build/ios/build/generated/ios/RCTThirdPartyComponentsProvider.h
+[Codegen] Generating RCTThirdPartyComponentsProvider.mm
+[Codegen] Generated artifact: /Users/expo/workingdir/build/ios/build/generated/ios/RCTThirdPartyComponentsProvider.mm
+[Codegen] Generating RCTModulesProvider.h
+[Codegen] Generated artifact: /Users/expo/workingdir/build/ios/build/generated/ios/RCTModuleProviders.h
+[Codegen] Generating RCTModuleProviders.mm
+[Codegen] Generated artifact: /Users/expo/workingdir/build/ios/build/generated/ios/RCTModuleProviders.mm
+[Codegen] Generating RCTAppDependencyProvider
+[Codegen] Generated artifact: /Users/expo/workingdir/build/ios/build/generated/ios/RCTAppDependencyProvider.h
+[Codegen] Generated artifact: /Users/expo/workingdir/build/ios/build/generated/ios/RCTAppDependencyProvider.mm
+[Codegen] Generated podspec: /Users/expo/workingdir/build/ios/build/generated/ios/ReactAppDependencyProvider.podspec
+[Codegen] Generated podspec: /Users/expo/workingdir/build/ios/build/generated/ios/ReactCodegen.podspec
+[Codegen] Done.
+Analyzing dependencies
+――― MARKDOWN TEMPLATE ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+### Command
+```
+/Users/expo/.gems/arm64/bin/pod install
+```
+### Report
+* What did you do?
+* What did you expect to happen?
+* What happened instead?
+### Stack
+```
+   CocoaPods : 1.16.2
+        Ruby : ruby 3.2.8 (2025-03-26 revision 13f495dc2c) [arm64-darwin24]
+    RubyGems : 3.6.6
+        Host : macOS 15.5 (24F74)
+       Xcode : 16.4 (16F6)
+         Git : git version 2.49.0
+Ruby lib dir : /opt/homebrew/Cellar/ruby@3.2/3.2.8/lib
+Repositories : 
+```
+### Plugins
+```
+cocoapods-deintegrate : 1.0.5
+cocoapods-plugins     : 1.0.0
+cocoapods-search      : 1.0.1
+cocoapods-trunk       : 1.6.0
+cocoapods-try         : 1.2.0
+expo-cocoapods-proxy  : 0.1.0
+```
+### Podfile
+```ruby
+# Set by expo-router. This enables Fabric-only features from react-native-screens
+ENV['RNS_GAMMA_ENABLED'] ||= '1'
+require File.join(File.dirname(`node --print "require.resolve('expo/package.json')"`), "scripts/autolinking")
+require File.join(File.dirname(`node --print "require.resolve('react-native/package.json')"`), "scripts/react_native_pods")
+require 'json'
+podfile_properties = JSON.parse(File.read(File.join(__dir__, 'Podfile.properties.json'))) rescue {}
+def ccache_enabled?(podfile_properties)
+  # Environment variable takes precedence
+  return ENV['USE_CCACHE'] == '1' if ENV['USE_CCACHE']
+  # Fall back to Podfile properties
+  podfile_properties['apple.ccacheEnabled'] == 'true'
+end
+ENV['EX_DEV_CLIENT_NETWORK_INSPECTOR'] ||= podfile_properties['EX_DEV_CLIENT_NETWORK_INSPECTOR']
+ENV['RCT_USE_RN_DEP'] ||= '1' if podfile_properties['ios.buildReactNativeFromSource'] != 'true'
+ENV['RCT_USE_PREBUILT_RNCORE'] ||= '1' if podfile_properties['ios.buildReactNativeFromSource'] != 'true'
+ENV['RCT_HERMES_V1_ENABLED'] ||= '1' if podfile_properties['expo.useHermesV1'] == 'true'
+platform :ios, podfile_properties['ios.deploymentTarget'] || '15.1'
+prepare_react_native_project!
+target 'ThngBo' do
+  use_expo_modules!
+  if ENV['EXPO_USE_COMMUNITY_AUTOLINKING'] == '1'
+    config_command = ['node', '-e', "process.argv=['', '', 'config'];require('@react-native-community/cli').run()"];
+  else
+    config_command = [
+      'node',
+      '--no-warnings',
+      '--eval',
+      'require(\'expo/bin/autolinking\')',
+      'expo-modules-autolinking',
+      'react-native-config',
+      '--json',
+      '--platform',
+      'ios'
+    ]
+  end
+  config = use_native_modules!(config_command)
+  use_frameworks! :linkage => podfile_properties['ios.useFrameworks'].to_sym if podfile_properties['ios.useFrameworks']
+  use_frameworks! :linkage => ENV['USE_FRAMEWORKS'].to_sym if ENV['USE_FRAMEWORKS']
+  use_react_native!(
+    :path => config[:reactNativePath],
+    :hermes_enabled => podfile_properties['expo.jsEngine'] == nil || podfile_properties['expo.jsEngine'] == 'hermes',
+    # An absolute path to your application root.
+    :app_path => "#{Pod::Config.instance.installation_root}/..",
+    :privacy_file_aggregation_enabled => podfile_properties['apple.privacyManifestAggregationEnabled'] != 'false',
+  )
+  post_install do |installer|
+  # SWIFT_VERSION_FIX_APPLIED
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |cfg|
+      cfg.build_settings['SWIFT_VERSION'] = '5.9'
+      cfg.build_settings['SWIFT_STRICT_CONCURRENCY'] = 'minimal'
+      existing_cflags = cfg.build_settings['OTHER_CFLAGS'] || '$(inherited)'
+      cfg.build_settings['OTHER_CFLAGS'] = "#{existing_cflags} -Wno-unknown-attributes"
+    end
+  end
+    react_native_post_install(
+      installer,
+      config[:reactNativePath],
+      :mac_catalyst_enabled => false,
+      :ccache_enabled => ccache_enabled?(podfile_properties),
+    )
+  end
+end
+```
+### Error
+```
+Nanaimo::Reader::ParseError - [!] Dictionary missing ';' after key-value pair for "OTHER_CFLAGS", found "("
+   #  -------------------------------------------
+   #  				TARGETED_DEVICE_FAMILY = "1";
+   #  				SWIFT_STRICT_CONCURRENCY = minimal;
+274>  				OTHER_CFLAGS = $(inherited) -Wno-unknown-attributes;
+      				                ^
+   #  				CODE_SIGN_ENTITLEMENTS = ThngBo/ThngBo.entitlements;
+   #  			};
+   #  -------------------------------------------
+/Users/expo/.gems/arm64/gems/nanaimo-0.4.0/lib/nanaimo/reader.rb:284:in `raise_parser_error'
+/Users/expo/.gems/arm64/gems/nanaimo-0.4.0/lib/nanaimo/reader.rb:199:in `parse_dictionary'
+/Users/expo/.gems/arm64/gems/nanaimo-0.4.0/lib/nanaimo/reader.rb:132:in `parse_object'
+/Users/expo/.gems/arm64/gems/nanaimo-0.4.0/lib/nanaimo/reader.rb:193:in `parse_dictionary'
+/Users/expo/.gems/arm64/gems/nanaimo-0.4.0/lib/nanaimo/reader.rb:132:in `parse_object'
+/Users/expo/.gems/arm64/gems/nanaimo-0.4.0/lib/nanaimo/reader.rb:193:in `parse_dictionary'
+/Users/expo/.gems/arm64/gems/nanaimo-0.4.0/lib/nanaimo/reader.rb:132:in `parse_object'
+/Users/expo/.gems/arm64/gems/nanaimo-0.4.0/lib/nanaimo/reader.rb:193:in `parse_dictionary'
+/Users/expo/.gems/arm64/gems/nanaimo-0.4.0/lib/nanaimo/reader.rb:132:in `parse_object'
+/Users/expo/.gems/arm64/gems/nanaimo-0.4.0/lib/nanaimo/reader.rb:107:in `parse!'
+/Users/expo/.gems/arm64/gems/xcodeproj-1.27.0/lib/xcodeproj/plist.rb:27:in `read_from_path'
+/Users/expo/.gems/arm64/gems/xcodeproj-1.27.0/lib/xcodeproj/project.rb:211:in `initialize_from_file'
+/Users/expo/.gems/arm64/gems/xcodeproj-1.27.0/lib/xcodeproj/project.rb:113:in `open'
+/Users/expo/.gems/arm64/gems/cocoapods-1.16.2/lib/cocoapods/installer/analyzer.rb:1194:in `block (2 levels) in inspect_targets_to_integrate'
+/Users/expo/.gems/arm64/gems/cocoapods-1.16.2/lib/cocoapods/installer/analyzer.rb:1193:in `each'
+/Users/expo/.gems/arm64/gems/cocoapods-1.16.2/lib/cocoapods/installer/analyzer.rb:1193:in `block in inspect_targets_to_integrate'
+/Users/expo/.gems/arm64/gems/cocoapods-1.16.2/lib/cocoapods/user_interface.rb:64:in `section'
+/Users/expo/.gems/arm64/gems/cocoapods-1.16.2/lib/cocoapods/installer/analyzer.rb:1188:in `inspect_targets_to_integrate'
+/Users/expo/.gems/arm64/gems/cocoapods-1.16.2/lib/cocoapods/installer/analyzer.rb:107:in `analyze'
+/Users/expo/.gems/arm64/gems/cocoapods-1.16.2/lib/cocoapods/installer.rb:422:in `analyze'
+/Users/expo/.gems/arm64/gems/cocoapods-1.16.2/lib/cocoapods/installer.rb:244:in `block in resolve_dependencies'
+/Users/expo/.gems/arm64/gems/cocoapods-1.16.2/lib/cocoapods/user_interface.rb:64:in `section'
+/Users/expo/.gems/arm64/gems/cocoapods-1.16.2/lib/cocoapods/installer.rb:243:in `resolve_dependencies'
+/Users/expo/.gems/arm64/gems/cocoapods-1.16.2/lib/cocoapods/installer.rb:162:in `install!'
+/Users/expo/.gems/arm64/gems/cocoapods-1.16.2/lib/cocoapods/command/install.rb:52:in `run'
+/Users/expo/.gems/arm64/gems/claide-1.1.0/lib/claide/command.rb:334:in `run'
+/Users/expo/.gems/arm64/gems/cocoapods-1.16.2/lib/cocoapods/command.rb:52:in `run'
+/Users/expo/.gems/arm64/gems/cocoapods-1.16.2/bin/pod:55:in `<top (required)>'
+/Users/expo/.gems/arm64/bin/pod:25:in `load'
+/Users/expo/.gems/arm64/bin/pod:25:in `<main>'
+```
+――― TEMPLATE END ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+[!] Oh no, an error occurred.
+Search for existing GitHub issues similar to yours:
+https://github.com/CocoaPods/CocoaPods/search?q=%5B%21%5D+Dictionary+missing+%27%3B%27+after+key-value+pair+for+%22OTHER_CFLAGS%22%2C+found+%22%28%22%0A+++%23++-------------------------------------------%0A+++%23++%09%09%09%09TARGETED_DEVICE_FAMILY+%3D+%221%22%3B%0A+++%23++%09%09%09%09SWIFT_STRICT_CONCURRENCY+%3D+minimal%3B%0A274%3E++%09%09%09%09OTHER_CFLAGS+%3D+%24%28inherited%29+-Wno-unknown-attributes%3B%0A++++++%09%09%09%09++++++++++++++++%5E%0A+++%23++%09%09%09%09CODE_SIGN_ENTITLEMENTS+%3D+ThngBo%2FThngBo.entitlements%3B%0A+++%23++%09%09%09%7D%3B%0A+++%23++-------------------------------------------%0A&type=Issues
+If none exists, create a ticket, with the template displayed above, on:
+https://github.com/CocoaPods/CocoaPods/issues/new
+Be sure to first read the contributing guide for d
+etails on how to properly submit a ticket:
+https://github.com/CocoaPods/CocoaPods/blob/master/CONTRIBUTING.md
+Don't forget to anonymize any private data!
+Searching for inspections failed: undefined method `map' for nil:NilClass
+Looking for related issues on cocoapods/cocoapods...
+pod install exited with non-zero code: 1
