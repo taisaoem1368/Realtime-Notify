@@ -10,15 +10,11 @@
     "preview": {
       "distribution": "internal",
       "ios": {
-        "simulator": false,
-        "image": "macos-ventura-14.1-xcode-15.2"
+        "simulator": false
       }
     },
     "production": {
-      "autoIncrement": true,
-      "ios": {
-        "image": "macos-ventura-14.1-xcode-15.2"
-      }
+      "autoIncrement": true
     }
   },
   "submit": {

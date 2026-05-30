@@ -40,16 +40,7 @@
           "sounds": ["./assets/sounds/notification.wav"]
         }
       ],
-      [
-        "expo-build-properties",
-        {
-          "ios": {
-            "extraPodfileProperties": {
-              "SWIFT_VERSION": "5.0"
-            }
-          }
-        }
-      ]
+      "./plugins/withSwiftConcurrency"
     ],
     "experiments": {
       "typedRoutes": true
