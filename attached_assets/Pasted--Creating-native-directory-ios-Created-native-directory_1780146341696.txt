@@ -1,0 +1,21 @@
+- Creating native directory (./ios)
+✔ Created native directory
+- Updating package.json
+› Using react-native@0.79.2 instead of recommended react-native@0.83.6.
+- Updating package.json
+✔ Updated package.json | no changes
+- Running prebuild
+✖ Prebuild failed
+Error: [ios.dangerous]: withIosDangerousBaseMod: ENOENT: no such file or directory, open './assets/images/icon.png'
+Error: [ios.dangerous]: withIosDangerousBaseMod: ENOENT: no such file or directory, open './assets/images/icon.png'
+    at Object.openSync (node:fs:574:18)
+    at Object.readFileSync (node:fs:453:35)
+    at calculateHash (/Users/expo/workingdir/build/node_modules/.pnpm/@expo+image-utils@0.8.14_typescript@5.8.3/node_modules/@expo/image-utils/build/Cache.js:19:76)
+    at createCacheKey (/Users/expo/workingdir/build/node_modules/.pnpm/@expo+image-utils@0.8.14_typescript@5.8.3/node_modules/@expo/image-utils/build/Cache.js:24:18)
+    at Object.createCacheKeyWithDirectoryAsync (/Users/expo/workingdir/build/node_modules/.pnpm/@expo+image-utils@0.8.14_typescript@5.8.3/node_modules/@expo/image-utils/build/Cache.js:32:33)
+    at generateImageAsync (/Users/expo/workingdir/build/node_modules/.pnpm/@expo+image-utils@0.8.14_typescript@5.8.3/node_modules/@expo/image-utils/build/Image.js:227:34)
+    at async generateUniversalIconAsync (/Users/expo/workingdir/build/node_modules/.pnpm/@expo+prebuild-config@55.0.18_expo@55.0.26_typescript@5.8.3/node_modules/@expo/prebuild-config/build/plugins/icons/withIosIcons.js:194:15)
+    at async setIconsAsync (/Users/expo/workingdir/build/node_modules/.pnpm/@expo+prebuild-config@55.0.18_expo@55.0.26_typescript@5.8.3/node_modules/@expo/prebuild-config/build/plugins/icons/withIosIcons.js:128:20)
+    at async /Users/expo/workingdir/build/node_modules/.pnpm/@expo+prebuild-config@55.0.18_expo@55.0.26_typescript@5.8.3/node_modules/@expo/prebuild-config/build/plugins/icons/withIosIcons.js:60:5
+    at async action (/Users/expo/workingdir/build/node_modules/.pnpm/@expo+config-plugins@55.0.10/node_modules/@expo/config-plugins/build/plugins/withMod.js:199:23)
+pnpm expo prebuild --no-install --platform ios exited with non-zero code: 1
