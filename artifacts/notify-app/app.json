@@ -39,6 +39,16 @@
           "color": "#3B82F6",
           "sounds": ["./assets/sounds/notification.wav"]
         }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "extraPodfileProperties": {
+              "SWIFT_VERSION": "5.0"
+            }
+          }
+        }
       ]
     ],
     "experiments": {
