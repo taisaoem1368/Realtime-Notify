@@ -22,9 +22,10 @@ module.exports = function withSwiftConcurrency(config) {
     target.build_configurations.each do |cfg|
       cfg.build_settings['SWIFT_VERSION'] = '5.9'
       cfg.build_settings['SWIFT_STRICT_CONCURRENCY'] = 'minimal'
-      existing = cfg.build_settings['OTHER_CFLAGS'] || '$(inherited)'
-      unless existing.include?('-Wno-unknown-attributes')
-        cfg.build_settings['OTHER_CFLAGS'] = "#{existing} -Wno-unknown-attributes"
+      existing = cfg.build_settings['OTHER_CFLAGS']
+      flags = existing.is_a?(Array) ? existing : ['$(inherited)']
+      unless flags.include?('-Wno-unknown-attributes')
+        cfg.build_settings['OTHER_CFLAGS'] = flags + ['-Wno-unknown-attributes']
       end
     end
   end
